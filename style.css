@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+header {
+  padding: 1rem;
+}
+
+.logo {
+  position: relative;
+  top: 1rem;
+}
+
+nav img {
+  margin-left: 1rem;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 0 1rem;
+  position: relative;
+  left: 8rem;
+  top: -1rem;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.log {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  left: 0rem;
+  top: -3rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.log a {
+  position: relative;
+  left: -10rem;
+  top: 0.7rem;
+}
+
+.log a:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.learn {
+  color: #fff;
+  background-color: #000;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding: 0.5rem 1.2rem;
+  margin-left: 6.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.register,
+.learn:hover {
+  background-color: #fff;
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 10px;
+  padding: 0.5rem 1.2rem;
+  color: hsl(0, 0%, 41%);
+  cursor: pointer;
+}
+
+.features-menu {
+  background-color: #fff;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+  width: 10%;
+  height: 11rem;
+  position: relative;
+  left: 9rem;
+  top: -3rem;
+  display: none;
+}
+
+.feature img {
+  position: relative;
+  top: 1rem;
+  left: 0.5rem;
+}
+
+.feature h4 {
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  position: relative;
+  left: 2rem;
+  top: 0rem;
+}
+
+.company-menu {
+  background-color: #fff;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+  width: 10%;
+  height: 5rem;
+  position: relative;
+  left: 18rem;
+  top: -3rem;
+  display: none;
+}
+
+.company-menu h4 {
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  position: relative;
+  left: 2rem;
+  top: 0rem;
+  margin: 0.5rem 0;
+}
+
+.left h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-left: 6.5rem;
+}
+
+.left p {
+  width: 40%;
+  margin-left: 6.5rem;
+  padding: 1rem 0;
+  font-size: 19px;
+  line-height: 1.5rem;
+  color: hsl(0, 0%, 41%);
+}
+
+.images {
+  margin-left: 6.5rem;
+  margin-top: 5rem;
+}
+
+.right {
+  width: 30%;
+  position: relative;
+  left: 52rem;
+  top: -28rem;
+}
+
+.left {
+  max-height: 90vh;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.active-menu {
+  display: none;
+}
+
+.mobile-menu img {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .log {
+    left: 14.5rem;
+  }
+
+  .left p {
+    width: 50%;
+    line-height: 1.7rem;
+  }
+
+  .learn {
+    padding: 1rem 3.2rem;
+    font-size: 18px;
+  }
+
+  .right {
+    width: 44%;
+    left: 38rem;
+    top: -29rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu img {
+    position: relative;
+    left: 35rem;
+    top: -1rem;
+  }
+
+  .mobile-menu img:last-child {
+    left: 33rem;
+    display: none;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    display: block;
+    width: 143%;
+    position: relative;
+    left: 3rem;
+    top: -23rem;
+  }
+  .mobile-text {
+    position: relative;
+    top: 31rem;
+    left: 3rem;
+  }
+
+  br {
+    display: none;
+  }
+
+  .left h1 {
+    font-size: 46px;
+    width: 104%;
+  }
+
+  .left p {
+    width: 100%;
+    line-height: 1.8rem;
+  }
+
+  .learn {
+    font-size: 20px;
+    position: relative;
+    left: 5rem;
+    top: -1.5rem;
+  }
+
+  .images img {
+    margin: 0 1rem;
+    position: relative;
+    top: -1.5rem;
+  }
+
+  .images img:nth-child(1) {
+    left: -4rem;
+    top: -4rem;
+  }
+
+  .images img:nth-child(2) {
+    left: -5rem;
+    top: -3.5rem;
+  }
+
+  .images img:nth-child(3),
+  .images img:nth-child(4) {
+    left: 11rem;
+    top: -6rem;
+  }
+
+  .active-menu {
+    display: block;
+    background-color: #000;
+  }
+}

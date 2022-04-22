@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="logo" src="images/logo.svg" alt="logo" />
+        <div class="desktop-menu">
+          <ul>
+            <li>
+              <button id="features" class="btn">
+                Features
+                <img src="images/icon-arrow-down.svg" alt="arrow-down" />
+              </button>
+            </li>
+            <li>
+              <button id="companyBtn" class="btn">
+                Company
+                <img src="images/icon-arrow-down.svg" alt="arrow-down" />
+              </button>
+            </li>
+            <a href="#"><li>Careers</li></a>
+            <a href="#"><li>About</li></a>
+          </ul>
+          <div class="log">
+            <a href="#">Login</a>
+            <button class="register">Register</button>
+          </div>
+        </div>
+        <div class="mobile-menu">
+          <img src="images/icon-menu.svg" alt="burger-menu" />
+          <img src="images/icon-close-menu.svg" alt="close-menu" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="left">
+        <div id="featMenu" class="features-menu">
+          <div class="feature">
+            <img src="images/icon-todo.svg" alt="todo" />
+            <h4>Todo List</h4>
+          </div>
+          <div class="feature">
+            <img src="images/icon-calendar.svg" alt="calendar" />
+            <h4>Calendar</h4>
+          </div>
+          <div class="feature">
+            <img src="images/icon-reminders.svg" alt="reminders" />
+            <h4>Reminders</h4>
+          </div>
+          <div class="feature">
+            <img src="images/icon-planning.svg" alt="planning" />
+            <h4>Planning</h4>
+          </div>
+        </div>
+        <div class="company-menu">
+          <h4>History</h4>
+          <h4>Our Team</h4>
+          <h4>Blog</h4>
+        </div>
+        <div class="mobile-text">
+          <h1>
+            Make <br />
+            remote work
+          </h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="learn">Learn more</button>
+          <div class="images">
+            <img src="images/client-databiz.svg" alt="databiz" />
+            <img src="images/client-audiophile.svg" alt="audiophile" />
+            <img src="images/client-meet.svg" alt="meet" />
+            <img src="images/client-maker.svg" alt="maker" />
+          </div>
+        </div>
+        <img
+          class="right desktop-img"
+          src="images/image-hero-desktop.png"
+          alt="hero image"
+        />
+        <img
+          class="mobile-img"
+          src="images/image-hero-mobile.png"
+          alt="hero image"
+        />
+      </div>
+
+      <div class="active-menu">
+        <ul>
+          <li>
+            <button id="features" class="btn">
+              Features
+              <img src="images/icon-arrow-down.svg" alt="arrow-down" />
+            </button>
+          </li>
+          <li>
+            <button id="comp" class="btn">
+              Company
+              <img src="images/icon-arrow-down.svg" alt="arrow-down" />
+            </button>
+          </li>
+          <a href="#"><li>Careers</li></a>
+          <a href="#"><li>About</li></a>
+        </ul>
+        <div id="featMenuMobile" class="features-menu-mobile">
+          <div class="feature">
+            <img src="images/icon-todo.svg" alt="todo" />
+            <h4>Todo List</h4>
+          </div>
+          <div class="feature">
+            <img src="images/icon-calendar.svg" alt="calendar" />
+            <h4>Calendar</h4>
+          </div>
+          <div class="feature">
+            <img src="images/icon-reminders.svg" alt="reminders" />
+            <h4>Reminders</h4>
+          </div>
+          <div class="feature">
+            <img src="images/icon-planning.svg" alt="planning" />
+            <h4>Planning</h4>
+          </div>
+        </div>
+        <div class="company-menu-mobile">
+          <h4>History</h4>
+          <h4>Our Team</h4>
+          <h4>Blog</h4>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
